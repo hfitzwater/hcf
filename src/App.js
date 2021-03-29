@@ -1,23 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Navigation from './components/Navigation';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  withRouter
+} from "react-router-dom";
 
 function App() {
+  const Routable = withRouter(({ history, location }) => (
+    <div className="container sm m-auto">
+      <Header />
+      <Navigation />
+
+      <div className="p-4">
+        <Switch>
+          <Route exact path="/" component={About} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
+      </div>
+    </div>
+  ));
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routable />
+      </Router>
     </div>
   );
 }
