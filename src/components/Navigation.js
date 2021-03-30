@@ -13,15 +13,12 @@ const Navigation = ( props ) => {
   };
 
   return (
-    <div className="flex flex-row bg-gray-800 text-gray-100 font-black">
+    <div className="flex flex-row bg-gray-800 text-gray-100 font-black text-2xl">
       <Link to="/" className={linkClassName('/')}>
         About
       </Link>
       <Link to="/projects" className={linkClassName('/projects')}>
         Projects
-      </Link>
-      <Link to="/contact" className={linkClassName('/contact')}>
-        Contact
       </Link>
     </div>
   );

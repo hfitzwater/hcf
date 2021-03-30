@@ -20,3 +20,9 @@ a.active {
   @apply border-red-500;
   @apply border-b-2;
 }
+
+a.web {
+  @apply text-red-500;
+  @apply hover:text-red-200;
+  @apply font-bold;
+}

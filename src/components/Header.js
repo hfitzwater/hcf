@@ -4,7 +4,7 @@ export default class Header extends React.Component {
   render() {
     return (
       <div className="flex flex-row px-4 py-4 bg-gray-800 text-gray-100 font-black border-red-500 border-b-2">
-        <h1 className="flex-1 text-left text-2xl">
+        <h1 className="flex-1 text-left text-3xl">
           Hunter Fitzwater
         </h1>
         <div className="flex-1 text-right self-center">
