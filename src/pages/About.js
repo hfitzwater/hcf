@@ -5,7 +5,7 @@ export default class About extends React.Component {
   render() {
     return (
       <div className="text-center text-xl">
-        <img src="/face.jpeg" alt="face" className="rounded-full w-38 h-28 border-red-500 border-4 m-auto mb-4" />
+        <img src="./face.jpeg" alt="face" className="rounded-full w-38 h-28 border-red-500 border-4 m-auto mb-4" />
         <div className="mt-4">
           <strong>software engineer</strong> | <strong>game developer</strong> | <strong>3D printing enthusiast</strong>
         </div>

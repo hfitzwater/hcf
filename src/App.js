@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      <Router basename="/hcf">
         <Routable />
       </Router>
     </div>
