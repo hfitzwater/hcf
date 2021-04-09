@@ -81,6 +81,22 @@ export default class Projects extends React.Component {
         </div>
 
         <div className="flex flex-row border-b-2 py-4">
+          <div className="flex-1">
+            <h1 className="text-2xl font-black">
+              catscripts
+            </h1>
+            <div className="text-xl">
+              npm module to cat scripts property of package.json
+            </div>
+            <div className="mt-4">
+              <a href="https://www.npmjs.com/package/catscripts" className="web">
+                Website
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-row border-b-2 py-4">
           {/* <div className="flex-1 px-2">
             <img src="/flying-flip-phone.png" alt="flying-flip-phone"/>
           </div> */}
